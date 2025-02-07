@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love Days Celebration</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1 id="dayTitle">Love Days Celebration</h1>
-        <div class="date-display">
-            <p>Today is: <span id="currentDay">Loading...</span></p>
-        </div>
-        
-        <div class="camera-section">
-            <video id="video" autoplay playsinline></video>
-            <canvas id="canvas" style="display: none;"></canvas>
-            <div class="button-container">
-                <button id="startCamera">Start Camera</button>
-                <button id="captureBtn" disabled>Capture Moment</button>
-            </div>
-        </div>
+      <h1 id="dayTitle">Love Days Celebration</h1>
+      <div class="date-display">
+        <p>Today is: <span id="currentDay">Loading...</span></p>
+      </div>
 
-        <div class="result-section">
-            <img id="capturedImage" style="display: none;">
-            <div id="compliment" class="compliment-box"></div>
+      <div class="camera-section">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div class="button-container">
+          <button id="startCamera">Start Camera</button>
+          <button id="captureBtn" disabled>Capture Moment</button>
         </div>
+      </div>
+      <div class="result-section">
+        <img id="capturedImage" style="display: none;" />
+        <div id="compliment" class="compliment-box"></div>
+      </div>
     </div>
+    <script src="./face-api.js"></script>
     <script src="./loveData.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
