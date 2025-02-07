@@ -2,73 +2,73 @@ const loveDaysData = {
     "Feb 7": {
         name: "Rose Day",
         compliments: [
-            "You're as beautiful as a fresh blooming rose! 🌹",
-            "Your smile brightens the room like a garden of roses! 💐",
-            "You're as precious as the first rose of spring! 🌸",
-            "Your love blossoms like a perfect rose! ❤️"
+            "That smile is blooming brighter than any rose! 🌹",
+            "Your smile is like a garden of roses in full bloom! 💐",
+            "Capturing your radiant smile on Rose Day - perfect timing! 🌸",
+            "A smile as delicate as rose petals, yet as strong as its stem! ❤️"
         ]
     },
     "Feb 8": {
         name: "Propose Day",
         compliments: [
-            "You make every day worth celebrating! 💍",
-            "My heart skips a beat every time I see you! 💘",
-            "You're the missing piece to my puzzle! 💑",
-            "Life is beautiful with you in it! 💝"
+            "With a smile like that, how could anyone say no? 💍",
+            "Your smile is the reason I fall in love every day! 💘",
+            "That's the kind of smile that makes proposals perfect! 💑",
+            "Your smile just proposed a lifetime of happiness! 💝"
         ]
     },
     "Feb 9": {
         name: "Chocolate Day",
         compliments: [
-            "You're sweeter than all the chocolate in the world! 🍫",
-            "Life is like a box of chocolates, and you're the best piece! 🍪",
-            "You make my life deliciously sweet! 🎂",
-            "You're my favorite treat! 🍬"
+            "That smile is sweeter than all the chocolate in the world! 🍫",
+            "Your smile melts hearts faster than chocolate in the sun! 🍪",
+            "Mixing chocolate and your smile - a recipe for pure joy! 🎂",
+            "Who needs chocolate when we have your sweet smile? 🍬"
         ]
     },
     "Feb 10": {
         name: "Teddy Day",
         compliments: [
-            "You're as cuddly as a teddy bear! 🧸",
-            "Your hugs are better than any teddy bear's! 🤗",
-            "You bring warmth and comfort to my life! ❤️",
-            "You're my favorite cuddle buddy! 🐻"
+            "Your smile is cuddlier than a thousand teddy bears! 🧸",
+            "Even teddy bears would be jealous of that adorable smile! 🤗",
+            "Your smile makes everyone want to give you a big bear hug! ❤️",
+            "That's the kind of smile that makes teddy bears come alive! 🐻"
         ]
     },
     "Feb 11": {
         name: "Promise Day",
         compliments: [
-            "Every promise with you is worth keeping! 🤝",
-            "You make me want to be a better person! 💫",
-            "I promise to make you smile every day! 😊",
-            "Our bond is unbreakable! ⭐"
+            "I promise to keep that beautiful smile on your face! 🤝",
+            "Your smile is a promise of brighter days ahead! 💫",
+            "That smile seals all our promises perfectly! 😊",
+            "A smile worth promising forever for! ⭐"
         ]
     },
     "Feb 12": {
         name: "Hug Day",
         compliments: [
-            "Your hugs make everything better! 🤗",
-            "I could spend forever in your embrace! 💖",
-            "You give the warmest hugs in the world! 🌟",
-            "A hug from you feels like home! 🏠"
+            "Your smile gives the warmest virtual hug! 🤗",
+            "That's the smile that makes every hug special! 💖",
+            "Capturing your smile is like getting a warm hug! 🌟",
+            "Your smile and hugs - the perfect combination! 🏠"
         ]
     },
     "Feb 13": {
         name: "Kiss Day",
         compliments: [
-            "Your kisses are sweeter than honey! 💋",
-            "Every moment with you is magical! ✨",
-            "You take my breath away! 💘",
-            "Your love leaves me speechless! 💝"
+            "A smile that makes every kiss magical! 💋",
+            "Your smile is worth a thousand kisses! ✨",
+            "That smile makes everyone want to blow you a kiss! 💘",
+            "Kisses and smiles - you're mastering both! 💝"
         ]
     },
     "Feb 14": {
         name: "Valentine's Day",
         compliments: [
-            "You're my perfect Valentine! ❤️",
-            "Love is more beautiful because of you! 💑",
-            "You're the love story I always dreamed of! 💘",
-            "Forever feels too short with you! 💖"
+            "Your Valentine's smile lights up the whole world! ❤️",
+            "The perfect Valentine's Day smile has been captured! 💑",
+            "Your smile is the best Valentine's gift ever! 💘",
+            "That smile is what Valentine's dreams are made of! 💖"
         ]
     }
 };
