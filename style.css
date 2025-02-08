@@ -51,7 +51,7 @@ h1 {
   color: var(--text-light);
   font-weight: 500;
 }
-
+/* Camera section styles */
 .camera-section {
   background: var(--surface);
   padding: 2rem;
@@ -60,6 +60,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.camera-section:has(#video[style*="display: none"]) {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 
 #video,
@@ -188,5 +194,20 @@ button:disabled {
   button {
     width: 100%;
     justify-content: center;
+  }
+
+  .camera-section {
+    height: 400px;
+    padding: 1rem;
+  }
+
+  .camera-section:has(#video[style*="display: none"]) {
+    height: auto;
+    padding: 0;
+  }
+
+  #video,
+  #defaultImage {
+    height: 300px;
   }
 }
