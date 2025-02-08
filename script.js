@@ -2,7 +2,6 @@ let video;
 let canvas;
 let captureBtn;
 let startCameraBtn;
-let complimentBox;
 let currentDaySpan;
 let capturedImage;
 let defaultImage;
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     canvas = document.getElementById('canvas');
     captureBtn = document.getElementById('captureBtn');
     startCameraBtn = document.getElementById('startCamera');
-    complimentBox = document.getElementById('compliment');
     currentDaySpan = document.getElementById('currentDay');
     capturedImage = document.getElementById('capturedImage');
     defaultImage = document.getElementById('defaultImage');
@@ -89,14 +87,19 @@ function showCompliment() {
     const currentDate = `${month} ${date}`;
 
     const dayInfo = loveDaysData[currentDate];
-    if (dayInfo) {
-        const randomCompliment = dayInfo.compliments[Math.floor(Math.random() * dayInfo.compliments.length)];
-        complimentBox.textContent = randomCompliment;
-        complimentBox.style.display = 'block';
-    } else {
-        complimentBox.textContent = "Every day is a day to celebrate love! ❤️";
-        complimentBox.style.display = 'block';
+    let complimentText = dayInfo
+        ? dayInfo.compliments[Math.floor(Math.random() * dayInfo.compliments.length)]
+        : "Every day is a day to celebrate love! ❤️";
+    const resultSection = document.querySelector('.result-section');
+    const complimentBox = document.createElement('div');
+    complimentBox.className = 'compliment-box';
+    complimentBox.textContent = complimentText;
+    const existingCompliment = document.querySelector('.compliment-box');
+    if (existingCompliment) {
+        existingCompliment.remove();
     }
+
+    resultSection.appendChild(complimentBox);
 
     startCameraBtn.style.display = 'block';
     startCameraBtn.textContent = 'Take Another Photo';
