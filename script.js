@@ -5,6 +5,7 @@ let startCameraBtn;
 let complimentBox;
 let currentDaySpan;
 let capturedImage;
+let defaultImage;
 
 document.addEventListener('DOMContentLoaded', async () => {
     await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     complimentBox = document.getElementById('compliment');
     currentDaySpan = document.getElementById('currentDay');
     capturedImage = document.getElementById('capturedImage');
+    defaultImage = document.getElementById('defaultImage');
 
     updateCurrentDay();
     startCameraBtn.addEventListener('click', initCamera);
@@ -50,13 +52,14 @@ async function initCamera() {
         video.srcObject = stream;
         startCameraBtn.style.display = 'none';
         captureBtn.disabled = false;
+        defaultImage.style.display = 'none';
         video.style.display = 'block';
-        document.getElementById('smilePrompt').style.display = 'block'; // Show smile prompt
     } catch (err) {
         console.error('Error accessing camera:', err);
         alert('Unable to access camera. Please make sure you have granted camera permissions.');
     }
 }
+
 async function captureImage() {
     const smiling = await isSmiling();
     if (!smiling) {
@@ -75,6 +78,7 @@ async function captureImage() {
         stream.getTracks().forEach(track => track.stop());
     }
     video.style.display = 'none';
+    defaultImage.style.display = 'none';
     showCompliment();
 }
 
@@ -102,7 +106,7 @@ function showCompliment() {
 async function isSmiling() {
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions();
     console.log('Face detections:', detections);
-    
+
     if (detections.length > 0) {
         const expressions = detections[0].expressions;
         console.log('Detected expressions:', expressions);
